@@ -1,0 +1,53 @@
+#income-ic {
+    .ic-fixed {
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        max-width: 980px;
+        background-color: #fbf9fe;
+        z-index: 2;
+        .ic-header {
+            //  收益汇总头部
+            background-color: #fff;
+            .vux-flexbox {
+                box-sizing: border-box;
+                padding: 8px 8px;
+                font-size: 14px;
+                text-align: center;
+            }
+            .flex-demo {
+                border-radius: 10px;
+                border: 1px solid #c7c7c7;
+                p:nth-of-type(2) {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        } // 表头
+        .vux-table {
+            th {
+                width: 28%;
+                font-size: 12px;
+            }
+            th:nth-of-type(1) {
+                width: 16%;
+            }
+            &:after {
+                border-top: none;
+            }
+        }
+    }
+    .ic-table {
+        width: 100%;
+        height: 100%;
+        // padding-top: 144px;
+        padding-top: 79px;
+        td {
+            width: 28%;
+            font-size: 12px;
+        }
+        td:nth-of-type(1) {
+            width: 16%;
+        }
+    }
+}

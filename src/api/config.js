@@ -1,0 +1,1 @@
+export const successCode = new Set(['0', 0])

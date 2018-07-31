@@ -1,0 +1,106 @@
+#login-reg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*头部  */
+  .reg-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: #4b729e;
+    z-index: 1;
+    h1 {
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+  /* 步骤 */
+  .step {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+
+  /* 弹出协议 */
+  .show_agm {
+    position: relative;
+    box-sizing: border-box;
+    padding: 15px 15px 50px 15px;
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    z-index: 2;
+    .amg_box {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      h3 {
+        text-align: center;
+      }
+      p {
+        font-size: 14px;
+        text-align: left;
+        padding: 2px;
+      }
+    }
+    .amg_btn {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  /*注册按钮 */
+  .reg-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+  /*表单 */
+  .reg-send {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    .form {
+      margin-left: 5%;
+      width: 90%;
+      .weui-cells {
+        >div {
+          position: relative;
+        }
+      }
+      .btn1 {
+        margin-top: 15px;
+      }
+      p {
+        margin-top: 5px;
+        font-size: 12px;
+        color: #999;
+      }
+      .vux-x-input {
+        height: 20px;
+      }
+    }
+    .agm {
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+  /* 弹框 */
+  .weui-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+  }
+}

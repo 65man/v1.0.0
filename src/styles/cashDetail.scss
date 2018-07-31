@@ -1,0 +1,103 @@
+  #income-cd {
+      .cd-fixed {
+          position: fixed;
+          top: 50px;
+          width: 100%;
+          max-width: 980px;
+          background-color: #fbf9fe;
+          z-index: 2;
+          /* 表头 */
+          .title {
+              th {
+                  span {
+                      font-size: 14px;
+                  }
+                  .weui-cells {
+                      margin-top: 0px;
+                      background-color: #f7f7f7;
+                      &:before {
+                          border-top: none;
+                      }
+                      &:after {
+                          border-bottom: none;
+                      }
+                  }
+                  .weui-select {
+                      padding-right: 20px;
+                      padding-left: 4px;
+                      width: auto;
+                      height: 38px;
+                      line-height: 38px;
+                      font-size: 14px;
+                  }
+                  .weui-cell__bd:after {
+                      right: 10px;
+                      border-width: 0px 2px 2px 0px;
+                  }
+              }
+              .vux-table {
+                  th {
+                      width: 25%;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                  }
+                  &:after {
+                      border-top: none;
+                  }
+              }
+          }
+      }
+      /*  表格 */
+      .cd-table {
+          width: 100%;
+          height: 100%;
+          padding-top: 39px;
+          tr {
+              td {
+                  padding: 8px 3px;
+                  width: 25%;
+                  font-size: 12px;
+                  line-height: normal;
+              }
+          }
+      }
+      /* 弹出详细框 */
+      .ul-xdialog {
+          position: relative;
+          box-sizing: border-box;
+          padding-bottom: 50px;
+          width: 90%;
+          border: 1px solid #c7c7c7;
+          border-radius: 10px;
+          background-color: #fff;
+          tbody {
+              font-size: 14px;
+              tr {
+                  td:nth-of-type(1) {
+                      padding-right: 20px;
+                      width: 40%;
+                      text-align: right;
+                  }
+              }
+          }
+          .vux-x-icon {
+              position: absolute;
+              bottom: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+          }
+          .vux-x-icon {
+              position: absolute;
+              bottom: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+          }
+          p {
+              margin-top: 10px;
+              font-size: 14px;
+              color: #999;
+              text-align: center;
+          }
+      }
+  }

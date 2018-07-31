@@ -1,0 +1,68 @@
+  #more-mi {
+    font-size: 14px;
+    .content {
+      .weui-cells {
+        font-size: 14px;
+      }
+      .vux-table {
+        background-color: #fff;
+        tr {
+          font-size: 14px;
+          line-height: 32px;
+          td:nth-of-type(1) {
+            width: 40%;
+            text-align: right;
+          }
+          td:nth-of-type(2) {
+            width: 60%;
+            text-align: left;
+          }
+        }
+        tr:nth-last-of-type(1){
+         td{
+           padding-bottom: 10px;
+         }
+        }
+      }
+    }
+    /* 弹出框 */
+    .ischange {
+      position: relative;
+      box-sizing: border-box;
+      padding: 5px;
+      width: 90%;
+      border: 1px solid #c7c7c7;
+      border-radius: 10px;
+      background-color: #fff;
+      .weui-cells {
+        margin: 15px 0;
+        font-size: 14px;
+      }
+      .weui-cell{
+        padding:10px 5px;
+      }
+      .vux-x-input {
+        height: 22px;
+      }
+      .weui-btn {
+        margin: 15px 20px;
+        font-size: 12px;
+      }
+      >p {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #999;
+        text-align: left;
+      }
+      .tips-popover {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #e64340;
+        color: #fff;
+        border-radius: 3px;
+        z-index: 500;
+      }
+    }
+  }
